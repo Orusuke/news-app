@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyNews</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <header id="topbar">
+      <div class="logo">MyNews</div>
+      <nav id="tab-nav"></nav>
+      <button id="refresh-btn" onclick="refreshCurrent()" title="更新">
+        <span id="refresh-icon" class="refresh-icon">↻</span>
+      </button>
+    </header>
+
+    <div id="sub-header">
+      <span id="article-count"></span>
+      <span id="cache-info"></span>
+    </div>
+
+    <main id="main">
+      <div id="articles"></div>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
